@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.formContainer {
+    margin: 25px 0;
+}
+.displayRow:nth-child(odd){
+    background-color: #eeeeee;
+}
+.displayRow {
+    display: table-row;
+}
+.displayCell {
+    display: table-cell;
+    width: 25%;
+}
+
