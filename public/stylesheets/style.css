@@ -15,4 +15,6 @@ body {
     display: table-cell;
     width: 25%;
 }
-
+.search {
+    margin: 10px 0;
+}

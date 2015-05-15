@@ -6,7 +6,8 @@ var router = express.Router();
 router.get('/', function(req, res, next){
     var sortValue = parseInt(req.query.sort) || 1;
     var searchValue = req.query.name || "";
-    assignmentModel.find({name: new RegExp(searchValue, 'i')}, null, {sort:{name: sortValue}}, function(err, data){res.json(data)});
+    assignmentModel.find({name: new RegExp(searchValue, 'i')}, null, {sort:{name: sortValue}},
+        function(err, data){res.json(data)});
 });
 
 router.get('/search/:name', function(req, res, next) {
